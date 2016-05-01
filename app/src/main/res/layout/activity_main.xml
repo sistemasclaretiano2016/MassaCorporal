@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.gutierres.massacorporal.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/txt_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_peso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Informar o peso:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edt_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/txt_peso"
+        android:layout_toRightOf="@+id/txt_peso"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/txt_altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_altura"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Informar a altura:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edt_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edt_peso"
+        android:layout_toEndOf="@+id/txt_altura"
+        android:layout_toRightOf="@+id/txt_altura"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_altura"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edt_altura"
+        android:layout_below="@+id/txt_altura"
+        android:layout_marginTop="24dp"
+        android:text="Calcular"/>
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_calcular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+</RelativeLayout>
