@@ -1,4 +1,4 @@
-package br.com.gutierres.massacorporal;
+package br.com.claretiano.massacorporal;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

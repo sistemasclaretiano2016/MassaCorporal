@@ -1,4 +1,4 @@
-package br.com.gutierres.massacorporal;
+package br.com.claretiano.massacorporal;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
